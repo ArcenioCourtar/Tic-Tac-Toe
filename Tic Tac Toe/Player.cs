@@ -6,16 +6,17 @@ namespace Tic_Tac_Toe
 {
     class Player
     {
-        public int playerNumber = 0;
-        public string playerName;
+        public int number = 0;
+        public string name;
+        public int score = 0;
         private static int playerCount = 0;
 
         public Player(string aPlayerName)
         {
-            playerName = aPlayerName;
+            name = aPlayerName;
             playerCount++;
 
-            playerNumber = playerCount;
+            number = playerCount;
         }
     }
 }
